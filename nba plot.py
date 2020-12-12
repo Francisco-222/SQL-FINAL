@@ -45,6 +45,6 @@ def insert_data_labels(bars):
 
 
 # Code of below will print the bar data from csv
-insert_data_labels(barPG) ###PG mean the position of point guard
-insert_data_labels(barSF) ## this is Small forward
+insert_data_labels(barPG) ###PG mean the position of point guard in the ground
+insert_data_labels(barSF) ## this is Small forward in feild
 plt.show()
