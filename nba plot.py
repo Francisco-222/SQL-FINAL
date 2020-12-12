@@ -12,7 +12,7 @@ data = "https://raw.githubusercontent.com/Francisco-222/SQL-FINAL/main/nba%20pla
 sql_engine = create_engine('mysql+pymysql://root:@127.0.0.1:3306/nba_finalsql') #sql_engine will help to connect with the nba_sql database
 
 # The code below will print the columns
-data=pd.read_csv(data)
+data=pd.read_sql_table('nba players',sql_engine)
 
 subjects = ['Age', 'Weight', ] #    Will going to show the average between age and weight; However we can use any subjects from csv just we need to change info inside of []
 dataset = data.groupby('Position')[subjects].mean() # Will are combinate the subject with position
